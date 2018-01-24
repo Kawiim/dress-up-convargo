@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>CSS/HTML Workshop with Convargo</title>
-  </head>
-  <body>
-    <div id="trucker">
+<html lang="en">
+<head>
+  <title>CSS/HTML Workshop with Convargo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    #logo {
+      padding-top: 10px;
+    }
+
+    #logo img {
+      height: 30px;
+      width: 30px;
+    }
+
+    #main-jumbo {
+      background-color: #2A6C9D;
+    }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand" id="logo"><img src="convargo.png"></a>
+      <a class="navbar-brand" href="#">Convargo by Karim</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" id="main-jumbo">
+  <div class="container text-center">
+    <h1>Convargo</h1>      
+    <p>A smart concept, presented with a smart UI ! By me, for you ... What a poet ..</p>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>How it works ?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Explain Convargo concept (add associated image)</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Explain website (add associated image)</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Random stuff ... (add associated image)</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
+<div class="container-fluid bg-3 text-center">  
+  <div id="trucker">
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
@@ -17,7 +86,11 @@
     </div>
     <button id="compute">Compute</button>
     <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-  </body>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Karim Baali - Wep Application Architectures - ESILV - 2018</p>
+</footer>
+
+</body>
 </html>
