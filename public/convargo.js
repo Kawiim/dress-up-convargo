@@ -89,23 +89,23 @@ let CONVARGO = (() => {
     const deductibleOption = option ? 1 * volume : 0;
 
     var actors = [{
-      'who': 'shipper',
+      'who': 'Shipper',
       'type': 'debit',
       'amount': price + deductibleOption
     }, {
-      'who': 'trucker',
+      'who': 'Trucker',
       'type': 'credit',
       'amount': price - commission.value
     }, {
-      'who': 'insurance',
+      'who': 'Insurance',
       'type': 'credit',
       'amount': commission.insurance
     }, {
-      'who': 'treasury',
+      'who': 'Treasury',
       'type': 'credit',
       'amount': commission.treasury
     }, {
-      'who': 'convargo',
+      'who': 'Convargo',
       'type': 'credit',
       'amount': commission.convargo + deductibleOption
     }];

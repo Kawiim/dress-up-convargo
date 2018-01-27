@@ -20,3 +20,32 @@ footer {
   background-color: #f2f2f2;
   padding: 25px;
 }
+
+.label-pill {
+  float: right;
+  border-radius: 1em;
+}
+
+#red-text {
+  color: red;
+}
+
+#green-text {
+  color: #13E817;
+}
+
+#helper {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: gray;
+  border-radius: 1em;
+  padding-top: 15px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: collapse;
+}
