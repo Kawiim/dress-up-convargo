@@ -9,11 +9,13 @@
 
 #logo img {
   height: 30px;
-  width: 30px;
+  width: 130px;
 }
 
 #main-jumbo {
-  background-color: #2A6C9D;
+  background-image: url('banner.jpg');
+  background-size: contain;
+  color: white;
 }
 
 footer {
